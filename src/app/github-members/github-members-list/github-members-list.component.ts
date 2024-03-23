@@ -9,7 +9,7 @@ import { Member } from '../models/member';
 })
 export class GithubMembersListComponent implements OnInit {
   users: Member[] = [];
-  search: string = '';
+  search: string = ' ';
   constructor(private membersService: MembersService) {}
 
   ngOnInit(): void {
